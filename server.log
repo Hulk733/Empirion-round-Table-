@@ -1,0 +1,152 @@
+/home/user/workspace/main.py:66: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/user/workspace/main.py:106: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Will watch for changes in these directories: ['/home/user/workspace']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1197] using WatchFiles
+INFO:     Started server process [1206]
+INFO:     Waiting for application startup.
+Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<HyperAgent._evolution_loop() done, defined at /home/user/workspace/src/agents/hyperagent.py:135> exception=AttributeError("'MetaData' object has no attribute 'update'")>
+Traceback (most recent call last):
+  File "/home/user/workspace/src/agents/hyperagent.py", line 138, in _evolution_loop
+    await self._evolve()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 172, in _evolve
+    await self._update_database()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 184, in _update_database
+    agent.metadata.update({
+AttributeError: 'MetaData' object has no attribute 'update'
+Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<HyperAgent._evolution_loop() done, defined at /home/user/workspace/src/agents/hyperagent.py:135> exception=AttributeError("'MetaData' object has no attribute 'update'")>
+Traceback (most recent call last):
+  File "/home/user/workspace/src/agents/hyperagent.py", line 138, in _evolution_loop
+    await self._evolve()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 172, in _evolve
+    await self._update_database()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 184, in _update_database
+    agent.metadata.update({
+AttributeError: 'MetaData' object has no attribute 'update'
+Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<HyperAgent._evolution_loop() done, defined at /home/user/workspace/src/agents/hyperagent.py:135> exception=AttributeError("'MetaData' object has no attribute 'update'")>
+Traceback (most recent call last):
+  File "/home/user/workspace/src/agents/hyperagent.py", line 138, in _evolution_loop
+    await self._evolve()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 172, in _evolve
+    await self._update_database()
+  File "/home/user/workspace/src/agents/hyperagent.py", line 184, in _update_database
+    agent.metadata.update({
+AttributeError: 'MetaData' object has no attribute 'update'
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/agents/hyperagent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1206]
+🚀 Starting Empirion Genesis System...
+✅ Database initialized
+🌐 WebSocket server started on 0.0.0.0:8765
+✅ WebSocket server started
+🤖 AgentPool initialized with worker tasks
+✅ Agent pool initialized
+⟶ [Load] Command Room initialized.
+⟶ [Load] Department View initialized.
+⟶ [Load] Feature Console initialized.
+⟶ [Load] Deep Vault initialized.
+⟶ [Load] External Hub initialized.
+✅ UI pages loaded
+🌟 Initializing Empirion Core System...
+✨ Empirion Core System initialized
+✅ Empirion core system initialized
+✅ Created 3 initial agents
+🎉 Empirion Genesis System fully initialized!
+ThreadWeaver monitoring error: second must be in 0..59
+🛑 Shutting down Empirion Genesis System...
+🛑 Shutting down Empirion Core System...
+✅ Empirion Core System shutdown complete
+🛑 Shutting down AgentPool...
+✅ AgentPool shutdown complete
+🛑 Shutting down WebSocket server...
+✅ WebSocket server shutdown complete
+⟵ [Unload] Command Room cleaned up.
+⟵ [Unload] Department View cleaned up.
+⟵ [Unload] Feature Console cleaned up.
+⟵ [Unload] Deep Vault cleaned up.
+⟵ [Unload] External Hub cleaned up.
+✅ Empirion Genesis System shutdown complete
+WARNING:  WatchFiles detected changes in 'src/agents/hyperagent.py'. Reloading...
+INFO:     Started server process [1251]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/agents/hyperagent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1251]
+🚀 Starting Empirion Genesis System...
+✅ Database initialized
+🌐 WebSocket server started on 0.0.0.0:8765
+✅ WebSocket server started
+🤖 AgentPool initialized with worker tasks
+✅ Agent pool initialized
+⟶ [Load] Command Room initialized.
+⟶ [Load] Department View initialized.
+⟶ [Load] Feature Console initialized.
+⟶ [Load] Deep Vault initialized.
+⟶ [Load] External Hub initialized.
+✅ UI pages loaded
+🌟 Initializing Empirion Core System...
+✨ Empirion Core System initialized
+✅ Empirion core system initialized
+⚠️ Warning: Could not create initial agents: (sqlite3.IntegrityError) UNIQUE constraint failed: agents.name
+[SQL: INSERT INTO agents (id, name, agent_type, status, evolution_factor, capabilities, agent_metadata, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('2f728710-41b6-4a38-9c58-51083e796cdf', 'Alpha', 'HyperAgent', 'active', 1.0, '["quantum_processing", "pattern_recognition", "adaptive_learning", "memory_optimization", "task_execution", "communication", "self_modification", "predictive_analysis"]', '{}', '2025-06-21 01:43:20.769783', '2025-06-21 01:43:20.769785')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+🎉 Empirion Genesis System fully initialized!
+🛑 Shutting down Empirion Genesis System...
+🛑 Shutting down Empirion Core System...
+✅ Empirion Core System shutdown complete
+🛑 Shutting down AgentPool...
+✅ AgentPool shutdown complete
+🛑 Shutting down WebSocket server...
+✅ WebSocket server shutdown complete
+⟵ [Unload] Command Room cleaned up.
+⟵ [Unload] Department View cleaned up.
+⟵ [Unload] Feature Console cleaned up.
+⟵ [Unload] Deep Vault cleaned up.
+⟵ [Unload] External Hub cleaned up.
+✅ Empirion Genesis System shutdown complete
+INFO:     Started server process [1274]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 Starting Empirion Genesis System...
+✅ Database initialized
+🌐 WebSocket server started on 0.0.0.0:8765
+✅ WebSocket server started
+🤖 AgentPool initialized with worker tasks
+✅ Agent pool initialized
+⟶ [Load] Command Room initialized.
+⟶ [Load] Department View initialized.
+⟶ [Load] Feature Console initialized.
+⟶ [Load] Deep Vault initialized.
+⟶ [Load] External Hub initialized.
+✅ UI pages loaded
+🌟 Initializing Empirion Core System...
+✨ Empirion Core System initialized
+✅ Empirion core system initialized
+⚠️ Warning: Could not create initial agents: (sqlite3.IntegrityError) UNIQUE constraint failed: agents.name
+[SQL: INSERT INTO agents (id, name, agent_type, status, evolution_factor, capabilities, agent_metadata, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('e816217b-fabf-49af-b961-84f8f8707322', 'Alpha', 'HyperAgent', 'active', 1.0, '["quantum_processing", "pattern_recognition", "adaptive_learning", "memory_optimization", "task_execution", "communication", "self_modification", "predictive_analysis"]', '{}', '2025-06-21 01:43:28.417532', '2025-06-21 01:43:28.417535')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+🎉 Empirion Genesis System fully initialized!
+INFO:     127.0.0.1:34884 - "GET /api/status HTTP/1.1" 200 OK
